@@ -8,8 +8,7 @@ package name: com.dpm.uavflightplanner
 
 Keep clicking next until project.
 
-Go to pulled UAV package and delete the folder UAVFlightPlanner thats empty
-
-Pull all of the contents in folder to the new project folder.
+Go to com.dpm.uavflightplanner/UAVFlightPlanner folder and copy the contents 
+to the new project.
 
 Add Gson library via Project properties.

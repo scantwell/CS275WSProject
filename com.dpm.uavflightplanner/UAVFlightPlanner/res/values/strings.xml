@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UAV Flight Planner</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="activity_main_title">All Flight Plans</string>
+    <string name="activity_main_create_button">Create</string>
+    <string name="activity_main_edit_button"> Edit </string>
+    <string name="activity_main_view_button"> View </string>
+    <string name="activity_main_delete_button">Delete</string>
+    
+    <string name="activity_editflightplan_title">View/Edit One Flight Plan</string>
+    <string name="activity_editflightplan_fpname_hint">Enter/modify the flight plan name</string>
+    <string name="activity_editflightplan_button_submit">Submit Changes</string>
+    <string name="activity_editflightplan_button_delete">Delete</string>
+    
+    <string name="activity_viewflightplan_title">View One Flight Plan</string>
+    <string name="activity_viewflightplan_button_delete">Delete Flight Plan</string>
+    <string name="listrow_flightplan_wpname_label">WP Name</string>
+    <string name="listrow_flightplan_wpname_hint">Short description</string>
+    <string name="listrow_flightplan_wpnumber_label">WP Number</string>
+    <string name="listrow_flightplan_wpnumber_hint"> Sequence in plan (int) </string>
+    <string name="listrow_flightplan_latitude_label">Latitude</string>
+    <string name="listrow_flightplan_latitude_hint">Like 4001.638</string>
+    <string name="listrow_flightplan_longitude_label">Longitude</string>
+    <string name="listrow_flightplan_longitude_hint">Like -7435.8</string>
+    <string name="listrow_flightplan_altitude_label">Altitude</string>
+    <string name="listrow_flightplan_altitude_hint">In feet AGL</string>
+    <string name="listrow_flightplan_deltatime_label">Delta Time</string>
+    <string name="listrow_flightplan_deltatime_hint">Planned time from last</string>
+    
+
+    
+    <string name="activity_command_title">Command Flight</string>
+    <string name="activity_command_weather_label">Weather</string>
+    <string name="activity_command_deviations_label">Flight Deviations</string>
+    <string name="activity_command_weather_message">Weather message goes here</string>
+    <string name="activity_command_deviations_message">Flight deviation messages go here</string>
+    <string name="activity_command_button_fly_selected">Fly Selected Flight Plan</string>
+    <string name="activity_command_button_takeoff">Takeoff Now</string>
+    <string name="activity_command_button_return">Return Home Now</string>
+    
+    <string name="activity_map_title">Flight Plan Map</string>
+    
+    <string name="activity_general_fpname_label">FP Name</string>
+   	<string name="activity_general_fpname_display">FP name goes here</string>
+    
+    
+    
+    
+    <string name="title_activity_edit_flight_plan">Create/Edit Flight Plan</string>
+    <string name="title_activity_view_flight_plan">View Flight Plan</string>
+    <string name="title_activity_command_flight">Command Flight</string>
+    <string name="title_activity_flight_plan_map">Flight Plan Map</string>
+
+</resources>

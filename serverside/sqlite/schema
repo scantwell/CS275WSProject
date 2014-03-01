@@ -1,0 +1,19 @@
+This requires foreign keys to be enabled before any query is done.
+
+CREATE TABLE flightplan_names (FID INTEGER PRIMARY KEY AUTOINCREMENT, 
+			       flight_name TEXT UNIQUE NOT NULL);
+
+CREATE TABLE uav_id (ID integer primary key autoincrement, 
+		     UAVID INTEGER UNIQUE, 
+		     uav_name TEXT UNIQUE);
+
+CREATE TABLE waypoints (ID INTEGER PRIMARY KEY AUTOINCREMENT, 
+			FID INTEGER NOT NULL 
+				references flightplan_names(FID) 
+				on delete cascade, 
+			waypoint_name TEXT NOT NULL, 
+			waypoint_number INTEGER, 
+			latitude REAL, 
+			longitude REAL, 
+			altitude REAL, 
+			delta_time REAL);

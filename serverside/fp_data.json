@@ -1,0 +1,22 @@
+{
+	"name": "2014_02_25_fp1
+	"waypoint": [
+		{
+		"period": 0
+		"name": "wp1"
+		"seq_number": 1
+		"latitude": 50
+		"longitude": 60
+		"altitude": 100
+		"deltat": 4},
+		{
+		"period":1
+		"name": "wp1"
+		"seq_number": 2
+		"latitude": 51
+		"longitude" 61
+		"altitude": 50
+		"deltat": 2}
+	]
+}
+	

@@ -1,8 +1,16 @@
-[
-	{
-		"name": "2014_02_12_fp1"},
-	{
-		"name": "2014_02_23_fp2"},
-	{
-		"name": "2014_03_14_fp3"}
-]
+{
+  "flights": [
+    {
+      "period": 0,
+      "name": "flight1"
+    },
+    {
+      "period": 1,
+      "name": "flight2"
+    },
+    {
+      "period": 2,
+      "name": "flight3"
+    }
+  ]
+}

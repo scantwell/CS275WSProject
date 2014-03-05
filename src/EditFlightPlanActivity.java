@@ -37,6 +37,8 @@ public class EditFlightPlanActivity extends Activity {
 		Log.i("InfoTag", "Start onCreate");
 		
 		asyncResponse = new UploadFPTask().execute();
+		
+		
 		btnSubmit = (Button) findViewById(R.id.buttonSubmit); 
 		//btnSubmit.setOnClickListener(submitHandler);					//temp
 		

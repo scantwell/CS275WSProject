@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AllFPsActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNavButtons"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/buttonAll"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#ffff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_general_all_button" />
+
+        <Button
+            android:id="@+id/buttonOne"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_general_one_button" />
+
+        <Button
+            android:id="@+id/buttonMap"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_general_map_button" />
+
+        <Button
+            android:id="@+id/buttonFly"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_general_fly_button" />
+    </LinearLayout>
+    
+     <TextView
+        android:id="@+id/textViewSelectedFPName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutNavButtons"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_general_fpname_display"
+        android:textAlignment="center" >
+    </TextView>   
+    
+    <ListView
+   	    android:id="@+id/listViewFlightPlans"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_above="@+id/buttonDelete"
+   	    android:layout_below="@+id/textViewSelectedFPName"
+   	    android:layout_centerHorizontal="true"
+   	    android:choiceMode="singleChoice" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonNew"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:minLines="2"
+        android:text="@string/activity_main_new_button" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:minLines="2"
+        android:text="@string/activity_main_delete_button" />
+    
+</RelativeLayout>

@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
-import com.google.gson.JsonArray;
+ 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -15,7 +14,6 @@ import com.google.gson.JsonPrimitive;
 
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.TextView;
 
 public class DownloadWxTask extends AsyncTask<Void, Void, String> {
 	

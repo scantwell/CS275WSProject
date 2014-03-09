@@ -8,30 +8,55 @@
     <string name="activity_main_create_button">Create</string>
     <string name="activity_main_edit_button"> Edit </string>
     <string name="activity_main_view_button"> View </string>
-    <string name="activity_main_delete_button">Delete</string>
-    
+    <string name="activity_main_delete_button">Delete FP</string>
+    <string name="activity_main_new_button">New FP</string>
+    <string name="activity_main_delete_confirmation">Confirm you want to delete the selected flight plan</string>
+    <string name="activity_general_all_button">ALL</string>
+    <string name="activity_general_one_button">ONE</string>
+    <string name="activity_general_fly_button">FLY</string>
+    <string name="activity_general_map_button">MAP</string>
     <string name="activity_editflightplan_title">View/Edit One Flight Plan</string>
-    <string name="activity_editflightplan_fpname_hint">Enter/modify the flight plan name</string>
-    <string name="activity_editflightplan_button_submit">Submit Changes</string>
-    <string name="activity_editflightplan_button_delete">Delete</string>
-    
+    <string name="activity_editflightplan_fpname_hint">Short descriptive name</string>
+    <string name="activity_editflightplan_button_add_wp">Add WP</string>
+    <string name="activity_editflightplan_button_submit">Submit</string>
+    <string name="activity_editflightplan_button_save">Submit</string>
+    <string name="activity_editflightplan_button_cancel">Cancel</string>
+    <string name="activity_editflightplan_wpname_label">WP Name</string>
+    <string name="activity_editflightplan_wpname_hint">Short description of wp</string>
+    <string name="activity_editflightplan_wpnumber_label">WP Number</string>
+    <string name="activity_editflightplan_wpnumber_hint">Sequence in flight</string>
+    <string name="activity_editflightplan_latitude_label">Latitude</string>
+    <string name="activity_editflightplan_latitude_hint">Enter like 40.0016</string>
+    <string name="activity_editflightplan_longitude_label">Longitude</string>
+    <string name="activity_editflightplan_longitude_hint">Enter like -74.3567</string>
+    <string name="activity_editflightplan_altitude_label">Altititude</string>
+    <string name="activity_editflightplan_altitude_hint">In feet AGL</string>
+    <string name="activity_editflightplan_deltatime_label">Delta Time</string>
+    <string name="activity_editflightplan_deltatime_hint">From last to this wp</string>
     <string name="activity_viewflightplan_title">View One Flight Plan</string>
-    <string name="activity_viewflightplan_button_delete">Delete Flight Plan</string>
-    <string name="listrow_flightplan_wpname_label">WP Name</string>
+    <string name="activity_viewflightplan_button_add">Add WP</string>
+    <string name="activity_viewflightplan_button_edit">Edit FP</string>
+    <string name="activity_viewflightplan_button_delete">Delete WP</string>
+    <string name="activity_viewflightplan_button_delete_waypoint">Delete Waypoint</string>
+    <string name="activity_viewflightplan_delete_confirmation">Confirm you want to delete the selected waypoint</string>
+    <string name="listrow_flightplan_wpname_label">WP Name   </string>
+    <string name="listrow_flightplan_wpname_display">Short description</string>
     <string name="listrow_flightplan_wpname_hint">Short description</string>
-    <string name="listrow_flightplan_wpnumber_label">WP Number</string>
+    <string name="listrow_flightplan_wpnumber_label">WP Number </string>
+    <string name="listrow_flightplan_wpnumber_display"> Sequence in plan (int) </string>
     <string name="listrow_flightplan_wpnumber_hint"> Sequence in plan (int) </string>
-    <string name="listrow_flightplan_latitude_label">Latitude</string>
-    <string name="listrow_flightplan_latitude_hint">Like 4001.638</string>
-    <string name="listrow_flightplan_longitude_label">Longitude</string>
-    <string name="listrow_flightplan_longitude_hint">Like -7435.8</string>
-    <string name="listrow_flightplan_altitude_label">Altitude</string>
+    <string name="listrow_flightplan_latitude_label">Latitude  </string>
+    <string name="listrow_flightplan_latitude_display">Like 40.01638</string>
+    <string name="listrow_flightplan_latitude_hint">Like 40.01638</string>
+    <string name="listrow_flightplan_longitude_label">Longitude </string>
+    <string name="listrow_flightplan_longitude_display">Like -74.358</string>
+    <string name="listrow_flightplan_longitude_hint">Like -74.358</string>
+    <string name="listrow_flightplan_altitude_label">Altitude  </string>
+    <string name="listrow_flightplan_altitude_display">In feet AGL</string>
     <string name="listrow_flightplan_altitude_hint">In feet AGL</string>
     <string name="listrow_flightplan_deltatime_label">Delta Time</string>
+    <string name="listrow_flightplan_deltatime_display">Planned time from last</string>
     <string name="listrow_flightplan_deltatime_hint">Planned time from last</string>
-    
-
-    
     <string name="activity_command_title">Command Flight</string>
     <string name="activity_command_weather_label">Weather</string>
     <string name="activity_command_deviations_label">Flight Deviations</string>
@@ -40,18 +65,14 @@
     <string name="activity_command_button_fly_selected">Fly Selected Flight Plan</string>
     <string name="activity_command_button_takeoff">Takeoff Now</string>
     <string name="activity_command_button_return">Return Home Now</string>
-    
     <string name="activity_map_title">Flight Plan Map</string>
-    
     <string name="activity_general_fpname_label">FP Name</string>
-   	<string name="activity_general_fpname_display">FP name goes here</string>
-    
-    
-    
-    
+    <string name="activity_general_fpname_display">Selected flight plan name displays here</string>
     <string name="title_activity_edit_flight_plan">Create/Edit Flight Plan</string>
     <string name="title_activity_view_flight_plan">View Flight Plan</string>
     <string name="title_activity_command_flight">Command Flight</string>
     <string name="title_activity_flight_plan_map">Flight Plan Map</string>
+    <string name="title_activity_main">UAV Flight Planner</string>
+    <string name="title_activity_add_wp">Add Waypoint</string>
 
 </resources>

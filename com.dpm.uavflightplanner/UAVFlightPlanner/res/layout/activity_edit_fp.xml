@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditFPActivity" >
+
+    <TextView
+        android:id="@+id/textViewFPNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextFPName"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_general_fpname_label" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNavButtons1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+        
+       <Button
+           android:id="@+id/buttonAddWP"
+           style="?android:attr/buttonBarButtonStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/activity_editflightplan_button_add_wp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_editflightplan_button_submit" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_editflightplan_button_cancel" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextFPName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayoutNavButtons1"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_fpname_hint"
+        android:maxLines="1"
+        android:minLines="2" />
+
+    <ListView
+        android:id="@+id/listViewEditFP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutNavButtons1"
+        android:layout_alignLeft="@+id/textViewFPNameLabel"
+        android:layout_below="@+id/textViewFPNameLabel" >
+
+    </ListView>
+
+</RelativeLayout>

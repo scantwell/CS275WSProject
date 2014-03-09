@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddWPActivity" >
+
+    <TextView
+        android:id="@+id/textViewFPNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextFPName"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_general_fpname_label" />
+    
+    <EditText
+        android:id="@+id/editTextFPName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_fpname_hint"
+        android:maxLines="1"
+        android:minLines="2" />
+    
+    <EditText
+        android:id="@+id/editTextWPNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextFPName"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_wpnumber_hint"
+        android:inputType="numberSigned" />           
+    <LinearLayout
+        android:id="@+id/linearLayoutNavButtons1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_editflightplan_button_save" />
+       
+       <Button
+           android:id="@+id/buttonCancel"
+           style="?android:attr/buttonBarButtonStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/activity_editflightplan_button_cancel" />
+       	        
+	</LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewWPNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextWPNumber"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_editflightplan_wpnumber_label" />
+
+    <EditText
+        android:id="@+id/editTextAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextLongitude"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_altitude_hint"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewAltitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextAltitude"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_editflightplan_altitude_label" />
+
+    <EditText
+        android:id="@+id/editTextDelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextAltitude"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_deltatime_hint" />
+
+    <TextView
+        android:id="@+id/textViewDeltaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextDelta"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_editflightplan_deltatime_label" />
+
+    <EditText
+        android:id="@+id/editTextWPName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextWPNumber"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_wpname_hint" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextWPName"
+        android:ems="10"
+        android:hint="@string/activity_editflightplan_latitude_hint"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextLatitude"
+        android:ems="10"
+        android:hint="@string/listrow_flightplan_longitude_hint"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewLongitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAltitude"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_editflightplan_longitude_label" />
+
+    <TextView
+        android:id="@+id/textViewWPNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextWPName"
+        android:layout_alignParentLeft="true"
+        android:text="@string/activity_editflightplan_wpname_label" />
+
+    <TextView
+        android:id="@+id/textViewLatitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextLatitude"
+        android:layout_alignLeft="@+id/textViewWPNameLabel"
+        android:text="@string/activity_editflightplan_latitude_label" />
+    
+</RelativeLayout>

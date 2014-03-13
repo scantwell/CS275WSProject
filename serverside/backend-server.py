@@ -1,8 +1,11 @@
+#!/usr/bin/python
+
 from bottle import Bottle, route, run, debug, template, request, response
 import sqlite3
 from collections import OrderedDict
 
-dbpath="/Users/stephencantwell/Documents/JavaEclipse/repos/UAV/serverside/sqlite/main.db"
+#dbpath="/Users/stephencantwell/Documents/JavaEclipse/repos/UAV/serverside/sqlite/main.db"
+dbpath="C:\cygwin64\home\dmcgr_000\CS275\serverside\sqlite\main.db"
 
 app = Bottle()
 
@@ -122,4 +125,4 @@ def deleteFlight(name):
 		conn.close()
 
 
-app.run(host='localhost', port=8080, debug=True)
+app.run(host='localhost', port=8080, debug=True)  #localhost to 10.0.2.2  

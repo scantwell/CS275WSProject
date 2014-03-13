@@ -26,7 +26,6 @@ public class OneFPActivity extends Activity {
 	Button btnMap;
 	Button btnFly;
 	Button btnAdd;
-	//Button btnEdit;
 	Button btnDelete;
 	String selectedFP = null;
 	AsyncTask<String, Void, ArrayList<Map<String, String>>> asyncFP;
@@ -44,7 +43,6 @@ public class OneFPActivity extends Activity {
 		btnMap = (Button) findViewById(R.id.buttonMap);
 		btnFly = (Button) findViewById(R.id.buttonFly);
 		btnAdd = (Button) findViewById(R.id.buttonAdd);
-		//btnEdit = (Button) findViewById(R.id.buttonEdit);
 		btnDelete = (Button) findViewById(R.id.buttonDelete);
 		
 		btnAll.setOnClickListener(allHandler);
@@ -52,7 +50,6 @@ public class OneFPActivity extends Activity {
 		btnMap.setOnClickListener(mapHandler);
 		btnFly.setOnClickListener(flyHandler);
 		btnAdd.setOnClickListener(addHandler);
-		//btnEdit.setOnClickListener(editHandler);
 		btnDelete.setOnClickListener(deleteHandler);		
 		listViewFP = (ListView) findViewById(R.id.listViewFlightPlan1);
 		
@@ -75,17 +72,6 @@ public class OneFPActivity extends Activity {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		
-			/*
-			for(int i = 0; i < fplan.size(); i++){ 
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan = " + fplan.get(i).entrySet().toString());
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan.name = " + fplan.get(i).get("name").toString());
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan.seq_number = " + fplan.get(i).get("seq_number").toString());
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan.latitude = " + fplan.get(i).get("latitude").toString());
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan.longitude = " + fplan.get(i).get("longitude").toString());
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan.altitude = " + fplan.get(i).get("altitude").toString());
-				Log.i("InfoTag", "OneFPActivity.onCreate, fplan.deltat = " + fplan.get(i).get("deltat").toString());
-			}*/
 		
 			// Assign adapter to ListView		 
 			SimpleAdapter adapter = new SimpleAdapter(this, fplan,
@@ -119,7 +105,7 @@ public class OneFPActivity extends Activity {
 					myIntent.putExtra("fp", selectedFP); //Optional parameters
 					OneFPActivity.this.startActivity(myIntent);
 			   }
-			};	
+			};	  
 
 		View.OnClickListener mapHandler = new View.OnClickListener() {
 				public void onClick(View v) {
@@ -148,13 +134,6 @@ public class OneFPActivity extends Activity {
 			   }
 			};	
 			
-		/*View.OnClickListener editHandler = new View.OnClickListener() {
-				public void onClick(View v) {
-					Intent myIntent = new Intent(OneFPActivity.this, EditFPActivity.class);
-					myIntent.putExtra("fp", selectedFP); //Optional parameters
-					OneFPActivity.this.startActivity(myIntent);
-			   }
-			};*/
 			
 	View.OnClickListener deleteHandler = new View.OnClickListener() {
 			    public void onClick(View v) {

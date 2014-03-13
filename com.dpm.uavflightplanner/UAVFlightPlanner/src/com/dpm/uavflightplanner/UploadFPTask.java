@@ -76,7 +76,7 @@ public class UploadFPTask extends AsyncTask<ArrayList<Map<String, String>>, Void
 		String longitude = null;
 		String altitude = null;
 		String delta = null;
-		Map<String,String> wp = null;
+		Map<String,String> wp = null; 
 		
 		Log.i("InfoTag", "UploadFPTask.doInBackground2, fwplan.size() = " + fwplan.size());
 		for(int i = 0; i < fwplan.size(); i++) {
@@ -94,10 +94,13 @@ public class UploadFPTask extends AsyncTask<ArrayList<Map<String, String>>, Void
 			Log.i("InfoTag", "UploadFPTask.doInBackground.wpNumber = " + wpNumber);
 			Log.i("InfoTag", "UploadFPTask.doInBackground.latitude = " + latitude);
 			Log.i("InfoTag", "UploadFPTask.doInBackground.longitude = " + longitude);
+			altitude = altitude.replace(".0", "");
 			Log.i("InfoTag", "UploadFPTask.doInBackground.altitude = " + altitude);
+			delta = delta.replace(".0", "");
 			Log.i("InfoTag", "UploadFPTask.doInBackground.delta = " + delta);
 			fp.addWaypoint(wpName, Integer.valueOf(wpNumber), 
 							Float.valueOf(latitude), Float.valueOf(longitude), 
+							//Integer.valueOf(altitude), Integer.valueOf(delta));
 							Integer.valueOf(altitude), Integer.valueOf(delta));
 		}
 		Log.i("InfoTag", "Starting UploadFPTask.doInBackground.makes_it_to_here 2");
